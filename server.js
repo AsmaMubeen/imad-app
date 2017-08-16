@@ -27,7 +27,7 @@ var articles={
                 This is the content for my first article.
             </p>
     `
-},
+    },
     articleTwo:{
         
     title: 'Article Two | Asma Mubeen',
