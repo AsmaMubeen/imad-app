@@ -8,7 +8,7 @@ button.onclick=  function(){
     
     //Make the request
     request.open('GET','http://amubeen03asma.imad.hasura-app.io/counter',true);
-    request.send(null);
+    
     
     //Capture the request and store in a variable
     
@@ -24,6 +24,7 @@ button.onclick=  function(){
         //Not done yet
         
     };
+    request.send(null);
     
     
 };
