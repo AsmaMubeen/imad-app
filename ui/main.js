@@ -8,7 +8,7 @@ button.onclick=  function(){
     
     //Make the request
     request.open('GET','http://amubeen03asma.imad.hasura-app.io/counter',true);
-    
+    request.send(null);
     
     //Capture the request and store in a variable
     
@@ -18,13 +18,13 @@ button.onclick=  function(){
             if(request.Status === 200){
                 var counter = request.responseText;
                 var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
+                span.innerHTML = counter;
             }
         }
         //Not done yet
         
     };
-    request.send(null);
+    
     
     
 };
