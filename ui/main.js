@@ -6,6 +6,10 @@ button.onclick=  function(){
     //Create a request object
     var request = new XMLHttpRequest();
     
+    //Make the request
+    request.open('GET','http://amubeen03asma.imad.hasura-app.io/counter',true);
+    request.send(null);
+    
     //Capture the request and store in a variable
     
     request.onreadystatechange = function(){
@@ -21,7 +25,5 @@ button.onclick=  function(){
         
     };
     
-    //Make the request
-    request.open('GET','http://amubeen03asma.imad.hasura-app.io/counter',true);
-    request.send(null);
+    
 };
