@@ -9,7 +9,7 @@ button.onclick=  function(){
     //Capture the request and store in a variable
     
     request.onreadystatechange = function(){
-        if(request.readyState===XMLHttpRequest.DONE){
+        if(request.readyState === XMLHttpRequest.DONE){
             //Take some action
             if(request.Status === 200){
                 var counter = request.responseText;
@@ -23,5 +23,5 @@ button.onclick=  function(){
     
     //Make the request
     request.open('GET','http://amubeen03asma.imad.hasura-app.io/counter',true);
-    res.send(null);
+    request.send(null);
 };
