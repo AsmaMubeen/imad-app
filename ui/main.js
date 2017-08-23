@@ -62,7 +62,7 @@ submit.onclick = function(){
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
     //Make the request
-    request.open('GET','http://amubeen03asma.imad.hasura-app.io/submit_name?name='+name,true);
+    request.open('GET','http://amubeen03asma.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
     
 };
